@@ -36,8 +36,8 @@ function getStat() {
             clearInterval(checkConfig);
         }
 
-        // Checking the header is present
-        if ($('p.followers').length === 0) {
+        // Checking the header is present and page
+        if ($('p.followers').length === 0 || !$('.view').hasClass('photostream-page-view')) {
             return;
         }
 
