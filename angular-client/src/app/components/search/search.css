@@ -1,0 +1,47 @@
+.flickr-account-search {
+    padding: 100px 0;
+}
+
+.flickr-account-search h2 {
+    font-weight: 300 !important;
+    font-size: 35px;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.blue {
+    color: #0c9fea;
+}
+
+.people-found {
+    padding: 50px 0;
+}
+
+.people {
+    width: 200px;
+}
+
+.people .people-picture {
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+}
+
+.people .people-info {
+    padding: 20px 16px;
+}
+
+.people .name {
+    font-size: 18px;
+    padding: 5px 0;
+    color: #484848;
+}
+
+.people .username {
+    color: #8e8e8e;
+}
+
+.people a, .people a:hover {
+    text-decoration: none;
+}

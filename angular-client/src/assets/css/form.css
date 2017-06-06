@@ -1,0 +1,16 @@
+/* Inputs */
+
+input.form-control, button.btn {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 6px 12px;
+    height: 50px;
+}
+
+button.btn-info, button.btn-info:active, button.btn-info:focus, button.btn-info:active:focus, button.btn-info:hover {
+    background-image: inherit;
+    background-color: #0c9fea;
+    text-shadow: 0 0;
+    box-shadow: none;
+}

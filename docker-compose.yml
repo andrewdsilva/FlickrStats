@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+    angular:
+        build: angular-client
+        volumes:
+            - ./angular-client/src:/usr/src/app/src
+        ports:
+            - "80:80"
+    express:
+        build: express-server
+        volumes:
+            - ./express-server/src:/usr/src/app/src
+        ports:
+            - "3000:3000"

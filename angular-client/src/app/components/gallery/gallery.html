@@ -1,0 +1,80 @@
+<div class="flickr-gallery">
+    <div class="content bs">
+        <div class="row">
+            <div class="col-sm-6">
+
+                <div class="box user-info">
+                    <div class="info">
+                        <div class="people-picture" [ngStyle]="{ 'background-image': 'url(' + user.image + ')'}"></div>
+                        <div class="people-info">
+                            <div class="name">{{ user.name }}</div>
+                            <span class="username">@{{ user.username }}</span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <ul class="totals">
+                        <li class="followers">
+                            <i class="fa fa-users"></i>
+                            <h3>{{ user.followers }}</h3>
+                            <p>Followers</p>
+                        </li>
+
+                        <li class="views">
+                            <i class="fa fa-eye"></i>
+                            <h3>{{ gallery.totalViews }}</h3>
+                            <p>Views</p>
+                        </li>
+
+                        <li class="favorites">
+                            <i class="fa fa-heart"></i>
+                            <h3>{{ gallery.totalFavorites }}</h3>
+                            <p>Favorites</p>
+                        </li>
+
+                        <li class="comments">
+                            <i class="fa fa-comments"></i>
+                            <h3>{{ gallery.totalComments }}</h3>
+                            <p>Comments</p>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 flickr-gallery-pictures">
+
+                <div class="section-title">
+                    Popular pictures
+                    <span>Sorted by views</span>
+                </div>
+
+                <a *ngFor="let picture of gallery.pictures; let i = index" href="{{ picture.url }}">
+                    <div class="box picture-box" *ngIf="i < maxPictures">
+                        <div class="picture" [ngStyle]="{ 'background-image': 'url(' + picture.image + ')'}"></div>
+                        <div class="info">
+                            <div class="name">{{ picture.name }}</div>
+                            <ul class="picture-stat">
+                                <li>
+                                    <a href="#"><i class="fa fa-eye margin-r-5"></i> {{ picture.views }} Views</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-thumbs-o-up margin-r-5"></i> {{ picture.favorites }} Favorites</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-comments-o margin-r-5"></i> {{ picture.comments }} Comments</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </a>
+
+                <div *ngIf="maxPictures < gallery.pictures.length" class="more-pictures">
+                    <button class="btn btn-info btn-flat" (click)="more()">Show more</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,128 @@
+.flickr-gallery {
+    padding: 30px 0;
+}
+
+/* User */
+
+.user-info {
+    margin-bottom: 30px;
+}
+
+.user-info .info {
+    padding: 20px;
+}
+
+.user-info .people-picture {
+    float: left;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-info .people-info {
+    float: left;
+    padding: 20px 16px;
+    margin-left: 20px;
+}
+
+.user-info .name {
+    font-size: 18px;
+    padding: 5px 0;
+    color: #484848;
+}
+
+.user-info .username {
+    color: #8e8e8e;
+}
+
+.user-info .totals {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.user-info .totals li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.user-info .totals li .fa {
+    font-size: 20px;
+}
+
+.user-info .totals li h3 {
+    margin: 5px;
+    padding: 0;
+    font-size: 16px;
+}
+
+.user-info .totals p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Totals box */
+
+.user-info .totals li.followers {
+    background-color: #3ea9e0 !important;
+    color: #FFF !important;
+}
+
+.user-info .totals li.views {
+    background-color: #e65454 !important;
+    color: #FFF !important;
+}
+
+.user-info .totals li.favorites {
+    background-color: #f1aa39 !important;
+    color: #FFF !important;
+}
+
+.user-info .totals li.comments {
+    background-color: #d2534b !important;
+    color: #FFF !important;
+}
+
+/* Picures */
+
+.picture-box {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.flickr-gallery-pictures .picture {
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.picture-box .info {
+    float: left;
+    box-sizing: border-box;
+    padding: 20px 16px;
+    width: calc(100% - 200px);
+}
+
+.picture-box .info .name {
+    font-size: 18px;
+    padding: 5px 0;
+    color: #484848;
+}
+
+.picture-box .info .picture-stat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.picture-box .info .picture-stat li a {
+    color: #8e8e8e;
+    font-size: 14px;
+}

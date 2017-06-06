@@ -1,0 +1,18 @@
+<header>
+    <div id="logo">
+        <a routerLink="/" routerLinkActive="active">
+            <img src="/assets/img/flickr_small.png" />
+            <span class="subtitle">Stats</span>
+        </a>
+    </div>
+    <ul class="menu">
+        <li>
+            <div class="menu-border">
+                <a routerLink="/search" routerLinkActive="active">Find people</a>
+            </div>
+        </li>
+    </ul>
+</header>
+<div class="page">
+    <router-outlet></router-outlet>
+</div>

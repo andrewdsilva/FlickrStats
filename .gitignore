@@ -1,0 +1,7 @@
+.directory
+
+express-server/node_modules/
+angular-client/node_modules/
+
+angular-client/dist/
+express-server/config.json

@@ -1,0 +1,26 @@
+<div class="flickr-account-search">
+    <div class="content">
+        <h2>Find your <span class="blue">Flickr</span> gallery and get some nice statistics.</h2>
+
+        <div class="input-group">
+            <input type="text" placeholder="Search a Flickr user..." class="form-control" [(ngModel)]="keyword" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-info btn-flat" [routerLink]="['/search', keyword]">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+        </div>
+
+        <div class="people-found" *ngFor="let p of people">
+            <a [routerLink]="['/gallery', p.id]">
+                <div class="box people">
+                    <div class="people-picture" [ngStyle]="{ 'background-image': 'url(' + p.image + ')'}"></div>
+                    <div class="people-info">
+                        <div class="name">{{ p.name }}</div>
+                        <span class="username">@{{ p.username }}</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

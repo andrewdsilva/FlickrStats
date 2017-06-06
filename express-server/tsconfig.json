@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl"            : ".",
+        "target"             : "ES2015",
+        "module"             : "commonjs",
+        "removeComments"     : true,
+        "preserveConstEnums" : true,
+        "outDir"             : "./bin",
+        "sourceRoot"         : "./src/",
+        "rootDir"            : "./src/",
+        "sourceMap"          : true
+    }
+}
