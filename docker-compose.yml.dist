@@ -7,9 +7,14 @@ services:
             - ./angular-client/src:/usr/src/app/src
         ports:
             - "80:80"
+        environment:
+            PRODUCTION: "true"
     express:
         build: express-server
         volumes:
             - ./express-server/src:/usr/src/app/src
         ports:
-            - "3000:3000"
+            - "3042:3000"
+        environment:
+            FLICKR_API_KEY: "MyApiKey"
+            PORT: 3000
