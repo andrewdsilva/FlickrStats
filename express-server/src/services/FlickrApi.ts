@@ -1,7 +1,7 @@
 declare function require( name: string );
+declare var process;
 
 let request: any = require("request");
-let fs: any      = require("fs");
 
 export class FlickrApi {
 
@@ -9,7 +9,7 @@ export class FlickrApi {
     private key: string;
 
     constructor() {
-        this.key = JSON.parse(fs.readFileSync("../config.json")).apiKey;
+        this.key = process.env.FLICKR_API_KEY;
     }
 
     private getDataParameters() {

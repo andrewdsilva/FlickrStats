@@ -5,7 +5,6 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY package.json /usr/src/app
-COPY config.json /usr/src
 
 COPY . /usr/src/app
 
